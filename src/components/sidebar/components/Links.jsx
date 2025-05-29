@@ -42,7 +42,7 @@ export function SidebarLinks(props) {
                   className={`leading-1 ml-4 flex ${
                     activeRoute(route.path) === true
                       ? "font-bold text-navy-700 dark:text-white"
-                      : "font-medium text-[#367c84]"
+                      : "font-medium text-white"
                   }`}
                 >
                   {route.name}
