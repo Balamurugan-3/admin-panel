@@ -32,7 +32,7 @@ const routes = [
     name: "Main Dashboard",
     layout: "/admin",
     path: "default",
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <MdHome className="h-6 w-6 text-white" />,
     component: <MainDashboard />,
   },
   {
@@ -40,7 +40,7 @@ const routes = [
     layout: "/admin",
     path: "settings",
     component: <Settings />,
-    icon: <MdOutlineSettings className="h-6 w-6" />,
+    icon: <MdOutlineSettings className="h-6 w-6 text-white" />,
     secondary: false,
   },
   {
@@ -48,7 +48,7 @@ const routes = [
     layout: "/admin",
     path: "users",
     component: <Users />,
-    icon: <FaUsers className="h-6 w-6" />,
+    icon: <FaUsers className="h-6 w-6 text-white" />,
     secondary: false,
   },
   {
@@ -56,16 +56,17 @@ const routes = [
     layout: "/admin",
     path: "appointment",
     component: <AppointmentForm />,
-    icon: <FaRegCalendarAlt className="h-6 w-6" />,
+    icon: <FaRegCalendarAlt className="h-6 w-6 text-white" />,
     secondary: false,
   },
    {
     name: "Service Providers",
     layout: "/admin",
-    icon: <MdBarChart className="h-6 w-6" />,
-    path: "service-providers",
+    icon: <MdBarChart className="h-6 w-6 text-white" />,
+    path: "service-providers/*",
     component: <ServiceProviders />,
   },
+
   // {
   //   name: "NFT Marketplace",
   //   layout: "/admin",
@@ -92,7 +93,7 @@ const routes = [
     name: "Sign In",
     layout: "/auth",
     path: "sign-in",
-    icon: <MdLock className="h-6 w-6" />,
+    icon: <MdLock className="h-6 w-6 text-white" />,
     component: <SignIn />,
   },
   // {
