@@ -5,6 +5,7 @@ import MainDashboard from "views/admin/default";
 import Settings from "views/admin/settings";
 import Users from "views/admin/Users";
 import AppointmentForm from "views/admin/appointmentForm/index";
+import ServiceProviders from "views/admin/ServiceProviders";
 // import NFTMarketplace from "views/admin/marketplace";
 // import Profile from "views/admin/profile";
 // import DataTables from "views/admin/tables";
@@ -17,7 +18,7 @@ import SignIn from "views/auth/SignIn";
 import {
   MdHome,
   // MdOutlineShoppingCart,
-  // MdBarChart,
+ MdBarChart,
   // MdPerson,
   MdLock,
   MdOutlineSettings,
@@ -57,6 +58,13 @@ const routes = [
     component: <AppointmentForm />,
     icon: <FaRegCalendarAlt className="h-6 w-6" />,
     secondary: false,
+  },
+   {
+    name: "Service Providers",
+    layout: "/admin",
+    icon: <MdBarChart className="h-6 w-6" />,
+    path: "service-providers",
+    component: <ServiceProviders />,
   },
   // {
   //   name: "NFT Marketplace",
