@@ -4,6 +4,8 @@ import Navbar from "components/navbar";
 import Sidebar from "components/sidebar";
 import Footer from "components/footer/Footer";
 import routes from "routes.js";
+import Settings from "views/admin/settings";
+import Appointment from "views/admin/appointmentForm/index";
 
 export default function Admin(props) {
   const { ...rest } = props;
@@ -25,7 +27,7 @@ export default function Admin(props) {
     for (let i = 0; i < routes.length; i++) {
       if (
         window.location.href.indexOf(
-          routes[i].layout + "/" + routes[i].path
+          routes[i].layout + "/bala" + routes[i].path
         ) !== -1
       ) {
         setCurrentRoute(routes[i].name);
@@ -33,6 +35,7 @@ export default function Admin(props) {
     }
     return activeRoute;
   };
+
   const getActiveNavbar = (routes) => {
     let activeNavbar = false;
     for (let i = 0; i < routes.length; i++) {
@@ -83,6 +86,8 @@ export default function Admin(props) {
                   path="/"
                   element={<Navigate to="/admin/default" replace />}
                 />
+                <Route path="settings/*" element={<Settings />} />
+                <Route path="appointment/*" element={<Appointment />} />
               </Routes>
             </div>
             <div className="p-3">

@@ -2,10 +2,13 @@ import React from "react";
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
-import Profile from "views/admin/profile";
-import DataTables from "views/admin/tables";
-import RTLDefault from "views/rtl/default";
+import Settings from "views/admin/settings";
+import Users from "views/admin/Users";
+import AppointmentForm from "views/admin/appointmentForm/index";
+// import NFTMarketplace from "views/admin/marketplace";
+// import Profile from "views/admin/profile";
+// import DataTables from "views/admin/tables";
+// import RTLDefault from "views/rtl/default";
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -13,11 +16,15 @@ import SignIn from "views/auth/SignIn";
 // Icon Imports
 import {
   MdHome,
-  MdOutlineShoppingCart,
-  MdBarChart,
-  MdPerson,
+  // MdOutlineShoppingCart,
+  // MdBarChart,
+  // MdPerson,
   MdLock,
+  MdOutlineSettings,
 } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
+
 
 const routes = [
   {
@@ -28,27 +35,51 @@ const routes = [
     component: <MainDashboard />,
   },
   {
-    name: "NFT Marketplace",
+    name: "Settings",
     layout: "/admin",
-    path: "nft-marketplace",
-    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
-    component: <NFTMarketplace />,
-    secondary: true,
+    path: "settings",
+    component: <Settings />,
+    icon: <MdOutlineSettings className="h-6 w-6" />,
+    secondary: false,
   },
   {
-    name: "Data Tables",
+    name: "Users",
     layout: "/admin",
-    icon: <MdBarChart className="h-6 w-6" />,
-    path: "data-tables",
-    component: <DataTables />,
+    path: "users",
+    component: <Users />,
+    icon: <FaUsers className="h-6 w-6" />,
+    secondary: false,
   },
   {
-    name: "Profile",
+    name: "Appointment",
     layout: "/admin",
-    path: "profile",
-    icon: <MdPerson className="h-6 w-6" />,
-    component: <Profile />,
+    path: "appointment",
+    component: <AppointmentForm />,
+    icon: <FaRegCalendarAlt className="h-6 w-6" />,
+    secondary: false,
   },
+  // {
+  //   name: "NFT Marketplace",
+  //   layout: "/admin",
+  //   path: "nft-marketplace",
+  //   icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+  //   component: <NFTMarketplace />,
+  //   secondary: true,
+  // },
+  // {
+  //   name: "Data Tables",
+  //   layout: "/admin",
+  //   icon: <MdBarChart className="h-6 w-6" />,
+  //   path: "data-tables",
+  //   component: <DataTables />,
+  // },
+  // {
+  //   name: "Profile",
+  //   layout: "/admin",
+  //   path: "profile",
+  //   icon: <MdPerson className="h-6 w-6" />,
+  //   component: <Profile />,
+  // },
   {
     name: "Sign In",
     layout: "/auth",
@@ -56,12 +87,12 @@ const routes = [
     icon: <MdLock className="h-6 w-6" />,
     component: <SignIn />,
   },
-  {
-    name: "RTL Admin",
-    layout: "/rtl",
-    path: "rtl",
-    icon: <MdHome className="h-6 w-6" />,
-    component: <RTLDefault />,
-  },
+  // {
+  //   name: "RTL Admin",
+  //   layout: "/rtl",
+  //   path: "rtl",
+  //   icon: <MdHome className="h-6 w-6" />,
+  //   component: <RTLDefault />,
+  // },
 ];
 export default routes;
