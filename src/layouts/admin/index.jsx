@@ -65,12 +65,14 @@ export default function Admin(props) {
       <Sidebar open={open} onClose={() => setOpen(false)} />
       {/* Navbar & Main Content */}
       <div className="h-full w-full bg-lightPrimary dark:!bg-navy-900">
+
         {/* Main Content */}
         <main
-          className={`mx-[12px] h-full flex-none transition-all md:pr-2 xl:ml-[313px]`}
+          className={` h-full flex-none transition-all  xl:ml-[265px]`}
         >
           {/* Routes */}
           <div className="h-full">
+
             <Navbar
               onOpenSidenav={() => setOpen(true)}
               logoText={"Horizon UI Tailwind React"}
@@ -78,24 +80,30 @@ export default function Admin(props) {
               secondary={getActiveNavbar(routes)}
               {...rest}
             />
-            <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">
-              <Routes>
-                {getRoutes(routes)}
 
-                <Route
-                  path="/"
-                  element={<Navigate to="/admin/default" replace />}
-                />
-                <Route path="settings/*" element={<Settings />} />
-                <Route path="appointment/*" element={<Appointment />} />
-              </Routes>
+            <div className="mx-[12px] h-full">
+              <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">
+                <Routes>
+                  {getRoutes(routes)}
+
+                  <Route
+                    path="/"
+                    element={<Navigate to="/admin/default" replace />}
+                  />
+                  <Route path="settings/*" element={<Settings />} />
+                  <Route path="appointment/*" element={<Appointment />} />
+                </Routes>
+              </div>
+              <div className="p-3">
+                <Footer />
+              </div>
             </div>
-            <div className="p-3">
-              <Footer />
-            </div>
+
           </div>
+
         </main>
-      </div>
-    </div>
+
+      </div >
+    </div >
   );
 }
