@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const ServiceProviders = () => {
 
   const location = useLocation();
+  console.log(location);
 
   const isFormPage = location.pathname.includes("/ServiceProvidersForm");
 
@@ -14,14 +15,14 @@ const ServiceProviders = () => {
           <h1 className="text-center text-3xl font-bold text-[#005558]">
             Service Providers
           </h1>
-          <p className="text-end">
+          <div className="text-end mb-8 ">
             <Link
               to="/admin/service-providers/ServiceProvidersForm"
-              className="mr-16 rounded bg-green-400 px-8 py-2 font-medium text-white"
+              className="mr-16 rounded bg-[#367c84] px-4 py-2 font-medium text-white"
             >
-              Book
+              ADD Providers
             </Link>
-          </p>
+          </div>
           <ServiceProvidersTable />
         </>
       ) : (

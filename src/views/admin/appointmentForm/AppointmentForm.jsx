@@ -31,9 +31,9 @@ export default function AppointmentForm() {
   };
 
   return (
-    <div className="w-full h-screen bg-gradient-to-br from-yellow-100 via-white to-yellow-50 flex justify-center items-center px-4">
-      <div className="w-full max-w-3xl bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-yellow-100">
-        <h2 className="text-4xl font-bold text-center text-yellow-600 mb-8 drop-shadow-sm">
+    
+      <div className=" bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-yellow-100">
+        <h2 className="text-4xl font-bold text-center text-[#005558] mb-8 drop-shadow-sm">
           💇‍♀️ Book Your Salon Appointment
         </h2>
 
@@ -46,7 +46,7 @@ export default function AppointmentForm() {
             <select
               value={selectedName}
               onChange={(e) => setSelectedName(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white shadow-inner"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none  bg-white shadow-inner"
             >
               <option value="">-- Choose your name --</option>
               {nameList.map((name, index) => (
@@ -66,7 +66,7 @@ export default function AppointmentForm() {
               {services.map((service) => (
                 <label
                   key={service}
-                  className="flex items-center space-x-3 bg-yellow-50 p-3 rounded-lg hover:bg-yellow-100 transition border border-yellow-200"
+                  className="flex items-center space-x-3 p-3 rounded-lg border border-gray-400"
                 >
                   <input
                     type="checkbox"
@@ -94,7 +94,7 @@ export default function AppointmentForm() {
               maxTime={setHours(setMinutes(new Date(), 0), 21)}
               excludeTimes={getExcludedTimes(selectedDate || new Date())}
               placeholderText="Choose Date & Time"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 shadow-inner focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 shadow-inner focus:outline-none "
             />
           </div>
 
@@ -106,19 +106,18 @@ export default function AppointmentForm() {
             <textarea
               rows="3"
               placeholder="Any special requests?"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-inner resize-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-inner resize-none focus:outline-none "
             />
           </div>
 
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white text-lg font-bold py-3 rounded-lg transition-all shadow-md"
+            className="w-full bg-[#005558] hover:bg-yellow-600 text-white text-lg font-bold py-3 rounded-lg transition-all shadow-md"
           >
             ✅ Book Appointment
           </button>
         </form>
       </div>
-    </div>
   );
 }

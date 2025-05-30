@@ -54,7 +54,7 @@ export default function SignIn() {
             </p>
           </div>
           <a
-            className="text-sm font-medium text-brand-500 hover:text-brand-600 dark:text-white"
+            className="text-sm font-medium text-yellow-400 hover:text-brand-600 dark:text-white"
             href=" "
           >
             Forgot Password?
@@ -69,7 +69,7 @@ export default function SignIn() {
           </span>
           <a
             href=" "
-            className="ml-1 text-sm font-medium text-brand-500 hover:text-brand-600 dark:text-white"
+            className="ml-1 text-sm font-medium text-yellow-400 hover:text-brand-600 dark:text-white"
           >
             Create an account
           </a>

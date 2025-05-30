@@ -32,7 +32,7 @@ export function SidebarLinks(props) {
                 <span
                   className={`${
                     activeRoute(route.path) === true
-                      ? "font-bold text-brand-500 dark:text-white"
+                      ? "font-bold text-yellow-400 dark:text-white"
                       : "font-medium text-gray-600"
                   }`}
                 >

@@ -15,7 +15,7 @@ export const barChartOptionsDailyTraffic = {
     style: {
       fontSize: "12px",
       fontFamily: undefined,
-      backgroundColor: "#000000"
+      backgroundColor: "#000000",
     },
     onDatasetHover: {
       style: {
@@ -79,12 +79,12 @@ export const barChartOptionsDailyTraffic = {
         [
           {
             offset: 0,
-            color: "#4318FF",
+            color: "#005558",
             opacity: 1,
           },
           {
             offset: 100,
-            color: "rgba(67, 24, 255, 1)",
+            color: "#367c84",
             opacity: 0.28,
           },
         ],
@@ -104,7 +104,7 @@ export const barChartOptionsDailyTraffic = {
 
 export const pieChartOptions = {
   labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  colors: ["#005558", "#6AD2FF", "#EFF4FB"],
   chart: {
     width: "50px",
   },
@@ -133,7 +133,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    colors: [ "#005558", "#FACC15", "#EFF4FB"],
   },
   tooltip: {
     enabled: true,
@@ -141,7 +141,7 @@ export const pieChartOptions = {
     style: {
       fontSize: "12px",
       fontFamily: undefined,
-      backgroundColor: "#000000"
+      backgroundColor: "#000000",
     },
   },
 };
@@ -152,12 +152,12 @@ export const barChartDataWeeklyRevenue = [
   {
     name: "PRODUCT A",
     data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
-    color: "#6AD2Fa",
+    color: "#005558",
   },
   {
     name: "PRODUCT B",
     data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
-    color: "#4318FF",
+    color: "#FACC15",
   },
   {
     name: "PRODUCT C",
@@ -178,9 +178,9 @@ export const barChartOptionsWeeklyRevenue = {
     style: {
       fontSize: "12px",
       fontFamily: undefined,
-      backgroundColor: "#000000"
+      backgroundColor: "#000000",
     },
-    theme: 'dark',
+    theme: "dark",
     onDatasetHover: {
       style: {
         fontSize: "12px",
@@ -260,12 +260,12 @@ export const lineChartDataTotalSpent = [
   {
     name: "Revenue",
     data: [50, 64, 48, 66, 49, 68],
-    color: "#4318FF",
+    color: "#005558",
   },
   {
     name: "Profit",
     data: [30, 40, 24, 46, 20, 46],
-    color: "#6AD2FF",
+    color: "#FACC15",
   },
 ];
 
@@ -296,9 +296,9 @@ export const lineChartOptionsTotalSpent = {
     style: {
       fontSize: "12px",
       fontFamily: undefined,
-      backgroundColor: "#000000"
+      backgroundColor: "#000000",
     },
-    theme: 'dark',
+    theme: "dark",
     x: {
       format: "dd/MM/yy HH:mm",
     },

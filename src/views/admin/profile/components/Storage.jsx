@@ -10,7 +10,7 @@ const Storage = () => {
       </div>
       {/* Your storage */}
       <div className="mb-auto flex flex-col items-center justify-center">
-        <div className="mt-2 flex items-center justify-center rounded-full bg-lightPrimary p-[26px] text-5xl font-bold text-brand-500 dark:!bg-navy-700 dark:text-white">
+        <div className="mt-2 flex items-center justify-center rounded-full bg-lightPrimary p-[26px] text-5xl font-bold text-yellow-400 dark:!bg-navy-700 dark:text-white">
           <BsCloudCheck />
         </div>
         <h4 className="mb-px mt-3 text-2xl font-bold text-navy-700 dark:text-white">

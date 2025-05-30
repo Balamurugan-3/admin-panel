@@ -71,9 +71,9 @@ const fetchServiceProviders = [{
 
   return (
     <section className="mt-4 overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200 ">
-        <thead className="bg-gray-100 ">
-          <tr>
+      <table className="min-w-full text-center bg-white">
+        <thead className="bg-gray-100">
+          <tr className="bg-green-50">
             {[
               "Name",
               "Shop Name",
@@ -90,7 +90,7 @@ const fetchServiceProviders = [{
             ].map((header) => (
               <th
                 key={header}
-                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-600 text-center"
+                className="px-6 py-3 text-xs uppercase tracking-wider text-center font-bold text-dark"
               >
                 {header}
               </th>
@@ -98,10 +98,10 @@ const fetchServiceProviders = [{
           </tr>
         </thead>
 
-        <tbody className="divide-y divide-gray-200 bg-white text-center">
+        <tbody className="divide-y divide-gray-200">
           {fetchServiceProviders && (
             fetchServiceProviders.map((item, index) => (
-              <tr key={item.id || index}>
+              <tr key={item.id || index} className="hover:bg-green-50">
                 <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-800">
                   {item.name}
                 </td>

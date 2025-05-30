@@ -37,7 +37,7 @@ export default function AppointmentList() {
             <div className='my-2'>
                 <h1 className="text-3xl font-bold text-[#005558] text-center">Salon Appointment</h1>
                 <p className='text-end'>
-                    <Link to="/admin/appointment/appointment-form" className="px-8 py-2 bg-green-400 text-white font-medium rounded mr-16">Book</Link>
+                    <Link to="/admin/appointment/appointment-form" className="px-8 py-2 bg-[#367c84] text-white font-medium rounded mr-16">Book</Link>
                 </p>
             </div>
             <div className="overflow-x-auto bg-white shadow-md rounded-lg mt-8 max-w-4xl mx-auto">
